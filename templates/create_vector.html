@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Vector</title>
+</head>
+<body>
+    <h1>Vector Elements</h1>
+    <div>
+        {% for item in vector %}
+            <span>{{ item }}</span>
+            {% if not loop.last %} {% endif %}
+        {% endfor %}
+    </div>
+</body>
+</html>
